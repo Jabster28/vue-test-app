@@ -9,7 +9,9 @@ const app = express();
 
 // our default array of dreams
 const dreams = [
-  "Find and count some sheep", "Climb a really tall mountain", "Wash the dishes"
+  "Find and count some sheep",
+  "Climb a really tall mountain",
+  "Wash the dishes"
 ];
 
 // make all the files in 'public' available
@@ -17,9 +19,9 @@ const dreams = [
 app.use(express.static("public"));
 
 // https://expressjs.com/en/starter/basic-routing.html
-app.get("/",
-        (request,
-         response) => { response.sendFile(__dirname + "/views/index.html"); });
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
 
 // send the default array of dreams to the webpage
 app.get("/dreams", (request, response) => {

@@ -2,7 +2,7 @@ module.exports = {
   // `module.rules` is the same as `module.loaders` in 1.x
 
   // options...
-  devServer : {disableHostCheck : true},
+  devServer: { disableHostCheck: true },
 
   //   chainWebpack: (config, isServer) => {
   //     config.module
@@ -12,12 +12,12 @@ module.exports = {
   //       .loader("coffee-loader")
   //       .end();
   //   },
-  pwa : {
-    name : "My App",
-    themeColor : "#4DBA87",
-    msTileColor : "#000000",
-    appleMobileWebAppCapable : "yes",
-    appleMobileWebAppStatusBarStyle : "black"
+  pwa: {
+    name: "My App",
+    themeColor: "#4DBA87",
+    msTileColor: "#000000",
+    appleMobileWebAppCapable: "yes",
+    appleMobileWebAppStatusBarStyle: "black"
     // configure the workbox plugin
     // workboxPluginMode: 'InjectManifest',
     // workboxOptions: {
